@@ -6,6 +6,38 @@
     <title>Achievements</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Inline styles for layout adjustments */
+        #achievements {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        .award {
+            margin-bottom: 30px; /* Space between awards */
+            padding: 15px;
+            border-left: 5px solid #005f73; /* Left border for emphasis */
+            background-color: #f9f9f9; /* Light background for awards */
+        }
+        .award h4 {
+            margin: 0; /* No margin for the heading */
+            color: #005f73; /* Change color for award title */
+        }
+        .summary {
+            margin-top: 10px; /* Space before summary */
+            color: #333; /* Darker text for readability */
+        }
+        footer {
+            background-color: #005f73; /* Primary color */
+            color: #ffffff; /* White text */
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <nav>
@@ -26,11 +58,35 @@
     <section id="achievements">
         <div class="container">
             <h3>Achievements</h3>
-            <ul>
-                <li><strong>NeoPel Intelligent Solutions:</strong> Awarded the "Talent of the Quarter Award" in July 2023.</li>
-                <li><strong>Oxane Partners:</strong> Emerged as National Winner of "Oxane Quest-Season 1", a Business Case Comp.</li>
-                <li><strong>Prism Johnson Limited:</strong> Awarded "Rising Star Technical services award" for consistent performance (2020).</li>
-            </ul>
+
+            <div class="award">
+                <h4>Talent of the Quarter Award</h4>
+                <p><strong>Organization:</strong> NeenOpal Intelligent Solutions Private Limited</p>
+                <p><strong>Year:</strong> 2023</p>
+                <p class="summary">Awarded the New Talent of the Quarter award for contributions made to the company and the product.</p>
+            </div>
+
+            <div class="award">
+                <h4>National Winner - Oxane Quest Season 1</h4>
+                <p><strong>Organization:</strong> Oxane Partners</p>
+                <p><strong>Year:</strong> 2022</p>
+                <p class="summary">Won the National Level Business Case study competition (among more than 120+ teams) and was extended a Pre Placement Interview Offer from the Company.</p>
+            </div>
+
+            <div class="award">
+                <h4>Runner Up in Data Spree Competition</h4>
+                <p><strong>Organization:</strong> Loyola Institute Of Business Administration</p>
+                <p><strong>Year:</strong> 2022</p>
+                <p class="summary">Bagged the second position in the Data Spree Competition (a Business Analytics event) conducted by Loyola Institute Of Business Administration.</p>
+            </div>
+
+            <div class="award">
+                <h4>Rising Star Technical Services Award</h4>
+                <p><strong>Organization:</strong> Prism Johnson Limited</p>
+                <p><strong>Year:</strong> 2020</p>
+                <p class="summary">Awarded Rising Star Technical Services Award for consistent performance.</p>
+            </div>
+
         </div>
     </section>
 
