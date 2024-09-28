@@ -6,6 +6,52 @@
     <title>Certifications</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Inline styles for layout adjustments */
+        #certifications {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        .certifications-container {
+            display: flex;
+            flex-wrap: wrap; /* Allow items to wrap */
+            gap: 20px; /* Space between tiles */
+        }
+        .certification {
+            background-color: #f9f9f9; /* Tile background color */
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            flex: 1 1 calc(50% - 20px); /* 2 tiles per row with gap consideration */
+            box-sizing: border-box; /* Include padding in width calculation */
+            transition: transform 0.3s; /* Smooth transition for hover effect */
+        }
+        .certification:hover {
+            transform: translateY(-5px); /* Lift effect on hover */
+        }
+        .certification h4 {
+            margin: 0 0 10px; /* Spacing for certification title */
+            color: #005f73; /* Change color for certification title */
+        }
+        .certification a {
+            color: #007bff; /* Link color */
+            text-decoration: none; /* Remove underline */
+        }
+        .certification a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+        footer {
+            background-color: #005f73; /* Primary color */
+            color: #000000;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <nav>
@@ -26,13 +72,83 @@
     <section id="certifications">
         <div class="container">
             <h3>Certifications</h3>
-            <ul>
-                <li><strong>Google Project Management Professional Certificate</strong> authorized by Google and Coursera</li>
-                <li><strong>Tableau Desktop II: Intermediate</strong> by The Tableau Learning Program</li>
-                <li><strong>Jira Fundamentals Badge</strong> by Atlassian University</li>
-                <li><strong>Google Analytics for Beginners</strong> by Google Analytics Academy</li>
-                <li><strong>Brand and Product Management</strong> from University of Illinois Business School by Coursera</li>
-            </ul>
+            <div class="certifications-container">
+                <div class="certification">
+                    <h4><a href="https://www.credly.com/badges/2263b9fd-e8bb-4e4e-8092-62a89ba26a53/linked_in_profile" target="_blank">Google Project Management Professional Certificate</a></h4>
+                    <p><strong>Issuing Organization:</strong> Coursera</p>
+                    <p><strong>Issued Date:</strong> June, 2024</p>
+                </div>
+                <div class="certification">
+                    <h4><a href="https://coursera.org/share/8e1962e79968e642c79e4ec8e73aadac" target="_blank">Capstone- Applying Project Management in the Real World</a></h4>
+                    <p><strong>Issuing Organization:</strong> Google</p>
+                    <p><strong>Issued Date:</strong> June, 2024</p>
+                </div>
+                <div class="certification">
+                    <h4><a href="https://coursera.org/share/335e401f067c654a41be57390a99f963" target="_blank">Agile Project Management</a></h4>
+                    <p><strong>Issuing Organization:</strong> Google</p>
+                    <p><strong>Issued Date:</strong> June, 2024</p>
+                </div>
+                <div class="certification">
+                    <h4><a href="https://coursera.org/share/ebdf79414f65b726d5690c888203314e" target="_blank">Project Execution-Running the Project</a></h4>
+                    <p><strong>Issuing Organization:</strong> Google</p>
+                    <p><strong>Issued Date:</strong> May, 2024</p>
+                </div>
+                <div class="certification">
+                    <h4><a href="https://www.coursera.org/account/accomplishments/certificate/TRRWVCT3QLN4" target="_blank">Project Planning-Putting It All Together</a></h4>
+                    <p><strong>Issuing Organization:</strong> Google</p>
+                    <p><strong>Issued Date:</strong> April, 2024</p>
+                </div>
+                <div class="certification">
+                    <h4><a href="https://www.coursera.org/account/accomplishments/verify/CHLWQWKE2FWP" target="_blank">Project Initiation-Starting a Successful Project</a></h4>
+                    <p><strong>Issuing Organization:</strong> Google</p>
+                    <p><strong>Issued Date:</strong> April, 2024</p>
+                </div>
+                <div class="certification">
+                    <h4><a href="https://www.coursera.org/account/accomplishments/verify/NQVJDSSK6DX4" target="_blank">Foundations of Project Management</a></h4>
+                    <p><strong>Issuing Organization:</strong> Google</p>
+                    <p><strong>Issued Date:</strong> March, 2024</p>
+                </div>
+                <div class="certification">
+                    <h4><a href="https://university.atlassian.com/student/award/TLTDcY6jbJW4e2DQgnkALUrN" target="_blank">Jira Fundamentals Badge</a></h4>
+                    <p><strong>Issuing Organization:</strong> Atlassian University</p>
+                    <p><strong>Issued Date:</strong> February, 2023</p>
+                </div>
+                <div class="certification">
+                    <h4><a href="https://verify.skilljar.com/c/ubhq9gbtgjhc" target="_blank">Tableau Desktop II: Intermediate</a></h4>
+                    <p><strong>Issuing Organization:</strong> Tableau E-Learning Program</p>
+                    <p><strong>Issued Date:</strong> September, 2021</p>
+                </div>
+                <div class="certification">
+                    <h4><a href="https://www.coursera.org/account/accomplishments/certificate/V4ZAWSVQGXAW" target="_blank">Brand and Product Management</a></h4>
+                    <p><strong>Issuing Organization:</strong> University IE Business School by Coursera</p>
+                    <p><strong>Issued Date:</strong> August, 2021</p>
+                </div>
+                <div class="certification">
+                    <h4><a href="https://www.coursera.org/account/accomplishments/certificate/84QXS6PCJU7E" target="_blank">Marketing in a Digital World</a></h4>
+                    <p><strong>Issuing Organization:</strong> University of Illinois at Urbana-Champaign by Coursera</p>
+                    <p><strong>Issued Date:</strong> July, 2021</p>
+                </div>
+                <div class="certification">
+                    <h4><a href="https://analytics.google.com/analytics/academy/certificate/LHxJd-X0S7KvHW9OHb6rEg" target="_blank">Google Analytics for Beginners</a></h4>
+                    <p><strong>Issuing Organization:</strong> Google Analytics Academy</p>
+                    <p><strong>Issued Date:</strong> December, 2022</p>
+                </div>
+                <div class="certification">
+                    <h4><a href="https://www.credly.com/badges/f3d98fda-cea6-427e-86fb-161855245a5a/public_url" target="_blank">Alteryx Foundational Micro-Credential</a></h4>
+                    <p><strong>Issuing Organization:</strong> Alteryx</p>
+                    <p><strong>Issued Date:</strong> September, 2022</p>
+                </div>
+                <div class="certification">
+                    <h4><a href="https://www.coursera.org/account/accomplishments/certificate/YC9F36ML3UBS" target="_blank">Introduction to Data Science in Python</a></h4>
+                    <p><strong>Issuing Organization:</strong> University of Michigan by Coursera</p>
+                    <p><strong>Issued Date:</strong> April, 2022</p>
+                </div>
+                <div class="certification">
+                    <h4><a href="https://www.coursera.org/account/accomplishments/certificate/JACCAERDABT3" target="_blank">Introduction to Marketing</a></h4>
+                    <p><strong>Issuing Organization:</strong> Wharton University of Pennsylvania by Coursera</p>
+                    <p><strong>Issued Date:</strong> August, 2021</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -43,3 +159,4 @@
     </footer>
 </body>
 </html>
+
