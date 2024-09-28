@@ -127,7 +127,7 @@ ul strong {
 /* Footer Styles */
 footer {
     background-color: #005f73; /* Primary color */
-    color: #ffffff; /* White text color */
+    color: #000000; /* White text color */
     text-align: center;
     padding: 20px 0; /* Vertical padding for spacing */
     margin-top: 20px; /* Space above the footer */
