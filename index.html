@@ -6,6 +6,7 @@
     <title>Portfolio - Ujjwal Kumar Shukla</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Link to Font Awesome -->
     <style>
         /* Inline styles for layout adjustments */
         #summary {
@@ -35,10 +36,18 @@
         /* Footer Styles */
         footer {
             background-color: #005f73; /* Primary color */
-            color: #000000;
+            color: #000000; /* Change to black for better contrast */
             text-align: center;
             padding: 20px 0;
             margin-top: 20px;
+        }
+        .linkedin-icon {
+            margin-left: 10px; /* Space between text and icon */
+            color: #ffffff; /* Icon color */
+            text-decoration: none; /* Remove underline from link */
+        }
+        .linkedin-icon:hover {
+            color: #a8dadc; /* Change color on hover */
         }
     </style>
 </head>
@@ -74,7 +83,11 @@
     <footer>
         <div class="container">
             <p>&copy; 2024 Ujjwal Kumar Shukla</p>
+            <a href="https://www.linkedin.com/in/ujjwalkumarshukla/" class="linkedin-icon" target="_blank">
+                <i class="fab fa-linkedin fa-lg"></i> LinkedIn
+            </a>
         </div>
     </footer>
 </body>
 </html>
+
