@@ -127,8 +127,15 @@ ul strong {
 /* Footer Styles */
 footer {
     background-color: #005f73; /* Primary color */
-    color: #ffffff;
+    color: #ffffff; /* White text color */
     text-align: center;
-    padding: 20px 0;
-    margin-top: 20px;
+    padding: 20px 0; /* Vertical padding for spacing */
+    margin-top: 20px; /* Space above the footer */
+}
+
+/* Additional Style for the Footer to Improve Visibility */
+footer p {
+    margin: 0; /* Remove default margin for paragraphs in footer */
+    font-size: 16px; /* Set a reasonable font size */
+    font-weight: 400; /* Normal font weight for better readability */
 }
