@@ -12,7 +12,7 @@
             display: flex;
             align-items: center; /* Center-align items vertically */
             margin: 20px 0;
-            gap: 2px; /* Space between text and image */
+            gap: 20px; /* Space between text and image */
         }
         #summary .text {
             flex: 1; /* Allow the text to take up available space */
@@ -35,10 +35,20 @@
         /* Footer Styles */
         footer {
             background-color: #005f73; /* Primary color */
-            color: #000000;
+            color: #ffffff; /* Changed to white for better visibility */
             text-align: center;
             padding: 20px 0;
             margin-top: 20px;
+        }
+        footer a {
+            color: #ffffff; /* LinkedIn link color */
+            text-decoration: none; /* No underline */
+            margin-left: 10px; /* Space between text and icon */
+        }
+        footer img {
+            width: 24px; /* LinkedIn icon size */
+            height: 24px; /* LinkedIn icon size */
+            vertical-align: middle; /* Aligns icon with text */
         }
     </style>
 </head>
@@ -58,7 +68,7 @@
     </nav>
 
     <section id="summary">
-        <div class="container text">
+        <div class="text">
             <h3>Summary</h3>
             <p>
                 I am an MBA graduate from IIT Kanpur and a passionate Product Management professional with nearly 3 years of experience in the Analytics and Marketing industry. My expertise encompasses a range of roles that include data-driven decision-making, A/B testing, product development, sales, and understanding user behavior, all of which are critical in formulating effective go-to-market (GTM) strategies.
@@ -73,9 +83,10 @@
     <footer>
         <div class="container">
             <p>&copy; 2024 Ujjwal Kumar Shukla</p>
+            <a href="https://www.linkedin.com/in/ujjwalkumarshukla/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/ee/LinkedIn_Logo.svg" alt="LinkedIn Icon"> LinkedIn
+            </a>
         </div>
     </footer>
 </body>
 </html>
-
-
