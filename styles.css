@@ -1,134 +1,140 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f8f9fa; /* Light background */
-    color: #343a40; /* Dark text */
-    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
-/* Navigation Styles */
 nav {
-    background-color: #ffffff; /* White background */
-    color: #343a40;
-    padding: 20px 0;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-    position: sticky; /* Makes nav sticky */
-    top: 0; /* Sticks to the top */
-    z-index: 1000; /* Keeps it on top of other elements */
+    background-color: #0275d8;
+    color: #fff;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
 }
 
 nav .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: auto;
-    padding: 0 20px;
 }
 
 nav h1 {
-    font-size: 24px;
+    margin: 0;
+    font-size: 1.5em;
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
 }
 
 nav ul li {
-    margin-left: 30px;
+    margin-left: 1em;
 }
 
 nav ul li a {
-    color: #005f73; /* Primary color */
+    color: #fff;
     text-decoration: none;
     font-weight: 500;
-    transition: color 0.3s ease;
+    transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #94d2bd; /* Lighter color for hover effect */
+    color: #ffdd57;
 }
 
-/* Section Styles */
-.container {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 30px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+header {
+    background-color: #fff;
+    padding: 6em 0 3em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1em;
 }
 
-h3 {
-    margin-bottom: 20px;
-    font-size: 28px;
-    color: #005f73; /* Title color */
-    border-bottom: 2px solid #005f73; /* Underline effect */
-    padding-bottom: 10px;
-}
-
-/* Improved List Styles */
-ul {
-    list-style-type: none;
-    padding-left: 0; /* Remove default padding */
-}
-
-ul li {
-    padding: 15px 0;
-    border-bottom: 1px solid #e9ecef; /* Light separator */
-    transition: background-color 0.3s ease;
-}
-
-ul li:last-child {
-    border-bottom: none;
-}
-
-ul li:hover {
-    background-color: #f1f1f1; /* Light gray background on hover */
-}
-
-ul strong {
-    color: #005f73; /* Emphasizing important text */
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    nav .container {
-        flex-direction: column; /* Stack items on smaller screens */
-        align-items: flex-start;
-    }
-
-    nav ul {
-        flex-direction: column; /* Stack menu items */
-        padding: 10px 0; /* Add padding for touch targets */
-    }
-
-    nav ul li {
-        margin-left: 0; /* Reset left margin for stacked items */
-        margin-bottom: 10px; /* Space between items */
-    }
-
-    h3 {
-        font-size: 24px; /* Smaller title on mobile */
-    }
-
-    .container {
-        padding: 20px; /* Less padding for smaller screens */
-    }
-}
-
-/* Footer Styles */
-footer {
-    background-color: #005f73; /* Primary color */
-    color: #ffffff;
+header .container {
     text-align: center;
-    padding: 20px 0;
-    margin-top: 20px;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 0.5em 0 0;
+    font-size: 1.1em;
+}
+
+header a {
+    color: #0275d8;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 2em 0;
+}
+
+section .container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+section h3 {
+    font-size: 1.75em;
+    color: #0275d8;
+    border-bottom: 2px solid #0275d8;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+}
+
+section ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+section ul li {
+    margin-bottom: 0.5em;
+}
+
+section .job {
+    margin-bottom: 2em;
+}
+
+section .job h4 {
+    font-size: 1.25em;
+    margin: 0;
+}
+
+section .job p {
+    margin: 0.5em 0 0;
+    color: #666;
+}
+
+section .job ul {
+    margin-top: 0.5em;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
+}
+
+footer p {
+    margin: 0;
 }
