@@ -10,7 +10,7 @@
         /* Inline styles for layout adjustments */
         #summary {
             display: flex;
-            align-items: center; /* Align items vertically center */
+            align-items: flex-start; /* Align items to the top */
             margin: 20px 0;
         }
         #summary .text {
@@ -21,6 +21,16 @@
             border-radius: 50%;
             width: 200px; /* Enlarged size */
             height: 200px; /* Enlarged size */
+            flex-shrink: 0; /* Prevent shrinking */
+        }
+        /* Container Styles */
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
@@ -35,7 +45,6 @@
                 <li><a href="certifications.html">Certifications</a></li>
                 <li><a href="skills.html">Skills</a></li>
                 <li><a href="achievements.html">Achievements</a></li>
-                <li><a href="interests.html">Interests</a></li>
             </ul>
         </div>
     </nav>
