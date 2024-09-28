@@ -3,9 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tools & Technical Skills</title>
+    <title>Skills</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Inline styles for layout adjustments */
+        #skills {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        .skill {
+            margin-bottom: 30px; /* Space between skills */
+            padding: 15px;
+            border-left: 5px solid #005f73; /* Left border for emphasis */
+            background-color: #f9f9f9; /* Light background for skills */
+        }
+        .skill h4 {
+            margin: 0; /* No margin for the heading */
+            color: #005f73; /* Change color for skill title */
+        }
+        .description {
+            margin-top: 10px; /* Space before description */
+            color: #333; /* Darker text for readability */
+        }
+        footer {
+            background-color: #005f73; /* Primary color */
+            color: #ffffff; /* White text */
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <nav>
@@ -25,21 +57,23 @@
 
     <section id="skills">
         <div class="container">
-            <h3>Tools & Technical Skills</h3>
-            <ul>
-                <li>MySQL</li>
-                <li>Power BI</li>
-                <li>Tableau</li>
-                <li>JIRA</li>
-                <li>Asana</li>
-                <li>Klaviyo</li>
-                <li>GA4</li>
-                <li>Google Ads</li>
-                <li>Meta Ads</li>
-                <li>Microsoft Clarity</li>
-                <li>SEMrush</li>
-                <li>Stripe</li>
-            </ul>
+            <h3>Skills</h3>
+
+            <div class="skill">
+                <h4>Technical Skills and Tools</h4>
+                <p class="description">SQL, Tableau, Power BI, MS-Excel, JIRA, Asana, Klaviyo, Google Analytics, Google Ads, Meta Ads, LinkedIn Ads, SEMrush, SPSS, and Stripe</p>
+            </div>
+
+            <div class="skill">
+                <h4>Marketing Strategy and Product Development</h4>
+                <p class="description">Product Strategy Planning & Implementation, Project Management, Product Development, Market Research, Content and Marketing strategy, Cross-Team Collaboration, Go-to-Market Strategy, Consumer Behaviour Analysis</p>
+            </div>
+
+            <div class="skill">
+                <h4>Analytical Skills</h4>
+                <p class="description">Data Mining, Product Analytics, Hypothesis Testing, Machine Learning Algorithms, and Data Driven Decision Making</p>
+            </div>
+
         </div>
     </section>
 
@@ -50,3 +84,4 @@
     </footer>
 </body>
 </html>
+
