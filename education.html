@@ -22,11 +22,11 @@
             border-left: 5px solid #005f73; /* Left border for emphasis */
             background-color: #f9f9f9; /* Light background for degrees */
             display: flex; /* Use flexbox for alignment */
-            align-items: center; /* Center items vertically */
+            align-items: flex-start; /* Align items at the start */
         }
-        .degree img {
+        .degree-logo {
             width: 50px; /* Set logo width */
-            height: auto; /* Maintain aspect ratio */
+            height: 50px; /* Set logo height to make them uniform */
             margin-right: 15px; /* Space between logo and text */
         }
         .degree h4 {
@@ -77,7 +77,7 @@
             <h3>Education</h3>
 
             <div class="degree">
-                <img src="IIT_logo.png" alt="IIT Kanpur Logo"> <!-- Add logo source -->
+                <img src="IIT_logo.png" alt="IIT Kanpur Logo" class="degree-logo"> <!-- Logo for IIT -->
                 <div>
                     <h4>Master of Business Administration (MBA)</h4>
                     <p><strong>Institution:</strong> Indian Institute of Technology (IIT), Kanpur</p>
@@ -92,7 +92,7 @@
             </div>
 
             <div class="degree">
-                <img src="IET_logo.png" alt="IET Lucknow Logo"> <!-- Add logo source -->
+                <img src="IET_logo.png" alt="IET Lucknow Logo" class="degree-logo"> <!-- Logo for IET -->
                 <div>
                     <h4>B.Tech</h4>
                     <p><strong>Institution:</strong> Institute of Engineering and Technology (IET), Lucknow</p>
