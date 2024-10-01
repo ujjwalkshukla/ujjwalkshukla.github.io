@@ -24,9 +24,15 @@
             border-radius: 10px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             padding: 20px;
-            flex: 1 1 calc(50% - 20px); /* 2 tiles per row with gap consideration */
+            flex: 1 1 calc(33.333% - 20px); /* 3 tiles per row with gap consideration */
             box-sizing: border-box; /* Include padding in width calculation */
             transition: transform 0.3s; /* Smooth transition for hover effect */
+        }
+        .project img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px; /* Space between image and content */
         }
         .project:hover {
             transform: translateY(-5px); /* Lift effect on hover */
@@ -71,6 +77,7 @@
         <h2 style="width: 100%;">Projects</h2> <!-- Added style to ensure full width -->
         
         <div class="project">
+            <img src="path/to/image1.jpg" alt="Mokkup.ai Project">
             <h4>Mokkup.ai - Product Review and Flow Improvement</h4>
             <p><strong>Role:</strong> Product Management Intern</p>
             <p><strong>Duration:</strong> 2023</p>
@@ -79,6 +86,7 @@
         </div>
 
         <div class="project">
+            <img src="path/to/image2.jpg" alt="Mokkup.ai GTM Project">
             <h4>Mokkup.ai - Go to Market Strategy for a cloud-based dashboard wireframing tool</h4>
             <p><strong>Role:</strong> Product Management Intern</p>
             <p><strong>Duration:</strong> 2023</p>
@@ -87,6 +95,7 @@
         </div>
 
         <div class="project">
+            <img src="path/to/image3.jpg" alt="Tiger Analytics E-Commerce Project">
             <h4>Tiger Analytics - E-Commerce Case Study Analysis</h4>
             <p><strong>Role:</strong> Analytics Consulting Intern</p>
             <p><strong>Duration:</strong> 2022</p>
@@ -95,6 +104,7 @@
         </div>
 
         <div class="project">
+            <img src="path/to/image4.jpg" alt="Oxane Partners Project">
             <h4>Oxane Partners - Due Diligence of Metropolis Capital's Existing pool of unsecured loans</h4>
             <p><strong>Role:</strong> Case Study Participant</p>
             <p><strong>Duration:</strong> 2022</p>
@@ -103,6 +113,7 @@
         </div>
 
         <div class="project">
+            <img src="path/to/image5.jpg" alt="SMBA Project">
             <h4>SMBA - Developed a model for 'Prediction of occurrence of Diabetes' using Machine Learning Algorithm - Logistic Regression</h4>
             <p><strong>Role:</strong> Statistical Modelling For Business Analytics course project at IIT Kanpur</p>
             <p><strong>Duration:</strong> 2022</p>
@@ -111,6 +122,7 @@
         </div>
 
         <div class="project">
+            <img src="path/to/image6.jpg" alt="Data Mining Project">
             <h4>Data Mining and Knowledge Discovery - Product recommendations for the next purchase based on existing customer data and purchase history</h4>
             <p><strong>Role:</strong> Data Mining and Knowledge Discovery Course Project at IIT Kanpur</p>
             <p><strong>Duration:</strong> 2022</p>
@@ -119,6 +131,7 @@
         </div>
 
         <div class="project">
+            <img src="path/to/image7.jpg" alt="Tiger Analytics Discount Strategy Project">
             <h4>Tiger Analytics - Discount & Markdown Strategy Optimization</h4>
             <p><strong>Role:</strong> Analytics Consulting Intern</p>
             <p><strong>Duration:</strong> 2022</p>
@@ -127,6 +140,7 @@
         </div>
 
         <div class="project">
+            <img src="path/to/image8.jpg" alt="Marketing Research Project">
             <h4>Marketing Research Project - Whether OTT platforms can replace the DTH service providers in the coming future?</h4>
             <p><strong>Role:</strong> Marketing Research Course Project at IIT Kanpur</p>
             <p><strong>Duration:</strong> 2022</p>
@@ -142,10 +156,3 @@
     </footer>
 </body>
 </html>
-
-
-
-
-
-
-
