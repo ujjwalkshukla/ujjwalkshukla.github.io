@@ -4,49 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Ujjwal Kumar Shukla</title>
+    <link rel="icon" href="Avatar.jpg" type="image/png"> <!-- Set favicon -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Link to Font Awesome -->
     <style>
         /* Inline styles for layout adjustments */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8; /* Light background for better contrast */
+            color: #333; /* Darker text for better readability */
+        }
+
+        nav {
+            background-color: #005f73; /* Primary color */
+            padding: 15px;
+        }
+
+        nav h1 {
+            color: #ffffff; /* White text for contrast */
+            margin: 0; /* Remove default margin */
+            font-size: 1.8em; /* Adjust font size */
+        }
+
+        nav ul {
+            list-style-type: none; /* Remove bullet points */
+            padding: 0; /* Remove padding */
+            display: flex; /* Flexbox for horizontal layout */
+            justify-content: center; /* Center nav items */
+        }
+
+        nav li {
+            margin: 0 15px; /* Space between items */
+        }
+
+        nav a {
+            color: #ffffff; /* White text for links */
+            text-decoration: none; /* Remove underline */
+            transition: color 0.3s; /* Smooth transition for hover effect */
+        }
+
+        nav a:hover {
+            color: #a8dadc; /* Change color on hover */
+        }
+
         #summary {
             display: flex;
             align-items: center; /* Center-align items vertically */
-            margin: 05px 0;
-            gap: 0px; /* Space between text and image */
+            margin: 20px 0; /* Adjusted margin for better spacing */
+            padding: 20px; /* Added padding */
+            background-color: #ffffff; /* White background for summary */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
         }
+
         #summary .text {
             flex: 1; /* Allow the text to take up available space */
+            margin-right: 20px; /* Space between text and image */
         }
+
         #summary img {
             border-radius: 50%;
             width: 200px; /* Enlarged size */
             height: 200px; /* Enlarged size */
             flex-shrink: 0; /* Prevent shrinking */
         }
-        /* Container Styles */
-        .container {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 10px;
-            background-color: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-        }
+
         /* Companies Section */
         .companies-container {
             margin: 20px 0;
         }
+
         .companies-container h3 {
             text-align: center;
             margin-bottom: 15px;
         }
+
         .companies {
             display: flex;
             justify-content: center; /* Center the logos */
             flex-wrap: wrap; /* Wrap logos on smaller screens */
             gap: 30px; /* Space between logos */
         }
+
         .company {
             display: flex;
             flex-direction: column; /* Stack logo and name vertically */
@@ -54,24 +96,28 @@
             width: 200px; /* Fixed width for consistency */
             text-align: center; /* Center-align the text */
         }
+
         .company img {
             width: 100%; /* Responsive logo size */
             height: auto;
             margin-bottom: 5px; /* Space between logo and name */
         }
+
         /* Footer Styles */
         footer {
             background-color: #005f73; /* Primary color */
-            color: #000000; /* Change to black for better contrast */
+            color: #ffffff; /* Change to white for better contrast */
             text-align: center;
             padding: 20px 0;
             margin-top: 20px;
         }
+
         .linkedin-icon {
             margin-left: 10px; /* Space between text and icon */
-            color: #0077B5; /* Icon color */
+            color: #ffffff; /* White icon color */
             text-decoration: none; /* Remove underline from link */
         }
+
         .linkedin-icon:hover {
             color: #a8dadc; /* Change color on hover */
         }
@@ -94,7 +140,7 @@
     </nav>
 
     <section id="summary">
-        <div class="container text">
+        <div class="text">
             <h3>Summary</h3>
             <p>
                 I am an MBA graduate from IIT Kanpur and a passionate Product Management professional with more than 3.5 years of experience in the Product, Analytics and Marketing industry. My expertise encompasses a range of roles that include data-driven decision-making, A/B testing, product development, sales, and understanding user behavior, all of which are critical in formulating effective go-to-market (GTM) strategies.
@@ -103,7 +149,7 @@
                 I am proficient in various tools and technologies, including Power BI, SQL, Jira, GA4, Klaviyo, Google Ads, and Meta Ads. My enthusiasm for learning continuously drives me to explore the nuances of digital marketing and product management, allowing me to stay ahead in this dynamic field.
             </p>
         </div>
-        <img src="Avatar.jpg" alt="Profile Photo">
+        <img src="path/to/your/image.png" alt="Profile Photo"> <!-- Update with the correct path -->
     </section>
 
     <section class="companies-container">
