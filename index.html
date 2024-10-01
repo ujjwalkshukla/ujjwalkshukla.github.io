@@ -33,6 +33,31 @@
             border-radius: 10px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
         }
+        /* Companies Section */
+        .companies-container {
+            margin: 20px 0;
+        }
+        .companies-container h3 {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .companies {
+            display: flex;
+            justify-content: center; /* Center the logos */
+            flex-wrap: wrap; /* Wrap logos on smaller screens */
+            gap: 30px; /* Space between logos */
+        }
+        .company {
+            display: flex;
+            flex-direction: column; /* Stack logo and name vertically */
+            align-items: center; /* Center-align items */
+            width: 100px; /* Fixed width for consistency */
+        }
+        .company img {
+            width: 100%; /* Responsive logo size */
+            height: auto;
+            margin-bottom: 5px; /* Space between logo and name */
+        }
         /* Footer Styles */
         footer {
             background-color: #005f73; /* Primary color */
@@ -80,6 +105,33 @@
         <img src="Avatar.jpg" alt="Profile Photo">
     </section>
 
+    <section class="companies-container">
+        <h3>Companies I Have Worked With</h3>
+        <div class="companies">
+            <div class="company">
+                <img src="path/to/company1-logo.png" alt="Company 1 Logo">
+                <span>Company 1</span>
+            </div>
+            <div class="company">
+                <img src="path/to/company2-logo.png" alt="Company 2 Logo">
+                <span>Company 2</span>
+            </div>
+            <div class="company">
+                <img src="path/to/company3-logo.png" alt="Company 3 Logo">
+                <span>Company 3</span>
+            </div>
+            <div class="company">
+                <img src="path/to/company4-logo.png" alt="Company 4 Logo">
+                <span>Company 4</span>
+            </div>
+            <div class="company">
+                <img src="path/to/company5-logo.png" alt="Company 5 Logo">
+                <span>Company 5</span>
+            </div>
+            <!-- Add more companies as needed -->
+        </div>
+    </section>
+
     <footer>
         <div class="container">
             <p>&copy; 2024 Ujjwal Kumar Shukla</p>
@@ -90,4 +142,3 @@
     </footer>
 </body>
 </html>
-
